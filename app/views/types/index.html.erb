@@ -1,0 +1,9 @@
+<h2>Types of Habits</h2>
+
+<ul>
+  <% @types.each do |type| %>
+    <li>
+      <%= link_to type.title, type_path(type) %>
+    </li>
+  <% end %>
+</ul>
