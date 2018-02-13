@@ -8,8 +8,8 @@ This schedule will be used to keep track of our progress throughout the week and
 |  Day | Deliverable | Approval From Squad Lead |
 |---|---| ---|
 |Day 1: Sat/Sun| Project Idea, Wireframes, Project Setup| Complete |
-|Day 2: Mon| Basic Clickable Model | |
-|Day 3: Tue| Working Prototype, Styling, Deploy| |
+|Day 2: Mon| Basic Clickable Model | Complete |
+|Day 3: Tue| Working Prototype, Styling| Complete |
 |Day 4: Wed| Project Presentations | |
 
 ## Trello Board
@@ -34,8 +34,8 @@ This schedule will be used to keep track of our progress throughout the week and
 
 ## Table Structures
     
-1. Habit Types
-2. Habit Details
+1. Types
+2. Habits
 
 ## Functional Components
 
@@ -43,10 +43,6 @@ This schedule will be used to keep track of our progress throughout the week and
 2. Habit Types
 3. Habits List
 4. Single Habit (Edit)
-
-## React Routes
-
-## Architecture Diagram
 
 ## Code Snippet
 
