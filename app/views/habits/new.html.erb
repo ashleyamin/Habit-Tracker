@@ -2,13 +2,13 @@
 <br />
 <%= form_for @habit do |f|%>
   <%= f.label :type_id %>
-  <%= f.number_field :type_id, placeholder: "Title" %>
-  <%= f.label :description %>
+  <%= f.number_field :type_id, placeholder: "Type of Habit" %>
+  <%= f.label :type_id %>
   <%= f.text_field :description, placeholder: "Description" %>
-  <%= f.label :weekly_practice_goal %>
   <%= f.number_field :weekly_goal, placeholder: "Weekly Goal" %>
-  <%= f.label :receive_reminder? %>
+  <br />
   <%= f.check_box :reminder, placeholder: "Reminder?" %>
+  <%= f.label :receive_reminder? %>
   <br />
   <br />
   <a class="waves-effect waves-light cyan lighten-2 btn"><i class="material-icons left">add</i>

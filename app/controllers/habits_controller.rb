@@ -1,10 +1,12 @@
 class HabitsController < ApplicationController
     def index
       @habits = Habit.all
+      @types = Type.all
     end
 
     def show
       @habit = Habit.find(params[:id])
+      @type = @habit.type
     end
 
     def new
