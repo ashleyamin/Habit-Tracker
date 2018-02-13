@@ -1,0 +1,13 @@
+<h1><%= @habit.type_id %></h1>
+
+<h2>Description: <%= @habit.description %></h2>
+<h2>Weekly Goal: <%= @habit.weekly_goal %></h2>
+<h2>Reminder? <%= @habit.reminder %></h2>
+
+<%= link_to "All Habits", habits_path %>
+<%= link_to "Edit Habit",edit_habit_path(@habit) %>
+
+
+<%= form_for @habit, html: {method: "delete"} do |f|%>
+  <%= f.submit "Delete #{@habit.description}?"%>
+<% end %>

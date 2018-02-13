@@ -1,0 +1,11 @@
+<%= form_for @habit do |f|%>
+  <%= f.label :type_id %>:
+  <%= f.number_field :type_id, placeholder: "Title" %>
+  <%= f.label :description %>:
+  <%= f.text_field :description, placeholder: "Description" %>
+  <%= f.label :weekly_practice_goal %>:
+  <%= f.number_field :weekly_goal, placeholder: "Weekly Goal" %>
+  <%= f.label :receive_reminder? %>
+  <%= f.check_box :reminder, placeholder: "Reminder?" %>
+  <%= f.submit "Add Habit"%>
+<% end %>

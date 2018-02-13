@@ -3,7 +3,7 @@
 <ul>
   <% @types.each do |type| %>
     <li>
-      <%= link_to type.title, type_path(type) %>
+      <%= link_to type.title, new_habit_path(@habit) %>
     </li>
   <% end %>
 </ul>
