@@ -1,11 +1,20 @@
 <%= form_for @habit do |f|%>
-  <%= f.label :type_id %>:
+  <%= f.label :type_id %>
   <%= f.number_field :type_id, placeholder: "Title" %>
-  <%= f.label :description %>:
+  <%= f.label :description %>
   <%= f.text_field :description, placeholder: "Description" %>
-  <%= f.label :weekly_practice_goal %>:
+  <%= f.label :weekly_practice_goal %>
   <%= f.number_field :weekly_goal, placeholder: "Weekly Goal" %>
   <%= f.label :receive_reminder? %>
   <%= f.check_box :reminder, placeholder: "Reminder?" %>
+  <br />
+  <br />
+  <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>
   <%= f.submit "Add Habit"%>
+  </a>
 <% end %>
+<br />
+<br />
+<div class="waves-effect waves-light btn">
+  <%= link_to "Cancel", habits_path, class: 'link-to-text-color' %>
+</div>

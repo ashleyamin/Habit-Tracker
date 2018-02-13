@@ -3,12 +3,24 @@
   <head>
     <title>HabitApp</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+      <nav>
+          <div class="nav-wrapper cyan lighten-3">
+            <a href="#" class="brand-logo center">TRACKER</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+              <%= link_to "New Habit", new_habit_path %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <div class="container">
     <%= yield %>
+    </div>
   </body>
 </html>

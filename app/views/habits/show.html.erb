@@ -4,10 +4,21 @@
 <h2>Weekly Goal: <%= @habit.weekly_goal %></h2>
 <h2>Reminder? <%= @habit.reminder %></h2>
 
-<%= link_to "All Habits", habits_path %>
-<%= link_to "Edit Habit",edit_habit_path(@habit) %>
-
-
+<br />
+<br />
+<div class="waves-effect waves-light btn">
+  <%= link_to "All Habits", habits_path, class: 'link-to-text-color' %>
+</div>
+<br />
+<br />
+<div class="waves-effect waves-light btn">
+  <i class="material-icons left">update</i>
+  <%= link_to "Edit Habit",edit_habit_path(@habit), class: 'link-to-text-color' %>
+</div>
+<br />
+<br />
+<div class="waves-effect waves-red red btn">
 <%= form_for @habit, html: {method: "delete"} do |f|%>
-  <%= f.submit "Delete #{@habit.description}?"%>
+  <%= f.submit "Delete"%>
 <% end %>
+</div>

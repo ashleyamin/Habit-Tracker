@@ -3,9 +3,14 @@
 <ul>
   <% @habits.each do |habit| %>
     <li>
-      <%= link_to habit.description, habit_path(habit) %>
+      <br />
+      <div class="waves-effect waves-light btn">
+      <%= link_to habit.description, habit_path(habit), class: 'link-to-text-color' %>
+      </div>
+      <br />
     </li>
   <% end %>
 </ul>
+
 
 <%= link_to "New Habit", new_habit_path %>

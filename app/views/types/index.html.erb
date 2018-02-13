@@ -3,7 +3,11 @@
 <ul>
   <% @types.each do |type| %>
     <li>
-      <%= link_to type.title, new_habit_path(@habit) %>
+      <br />
+      <div class="waves-effect waves-light btn">
+      <%= link_to type.title, new_habit_path(@habit), class: 'link-to-text-color'%>
+      </div>
+      <br />
     </li>
   <% end %>
 </ul>
