@@ -1,3 +1,5 @@
+<br />
+<br />
 <%= form_for @habit do |f|%>
   <%= f.label :description %>
   <%= f.text_field :description, placeholder: "Description" %>
@@ -15,7 +17,7 @@
   </div>
   <br />
   <br />
-  <a class="waves-effect waves-light btn"><i class="material-icons left">update</i>
+  <a class="waves-effect waves-light cyan lighten-2 btn"><i class="material-icons left">update</i>
   <%= f.submit "Update Habit"%>
   </a>
 <% end %>
