@@ -10,6 +10,20 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery3
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  $("input").change(function() {
+    if($(this).is(":checked")) {
+      console.log("Is checked");
+      <%= f.check_box :reminder, placeholder: "Reminder?" %>
+    }
+    else {
+      console.log("Is Not checked");
+      <%= f.check_box :reminder, placeholder: "Reminder?" %>
+    }
+  })
+});
