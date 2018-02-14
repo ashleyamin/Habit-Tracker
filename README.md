@@ -34,12 +34,12 @@ This schedule will be used to keep track of our progress throughout the week and
 2. Habits
 
 ## Code Snippet
-
+```
   <h1><%= @type.title %></h1>
-
   <h2>Description: <%= @habit.description %></h2>
   <h2>Weekly Goal: <%= @habit.weekly_goal %></h2>
   <h2>Reminder? <%= @habit.reminder %></h2>
+```
 
 ## Instructions for Downloading Code
 Instructions for downloading the code and running it on localhost:
